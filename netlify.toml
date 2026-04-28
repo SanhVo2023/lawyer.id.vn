@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Give the build extra memory — Payload + Next 16 can OOM at the default 4GB.
+  NODE_OPTIONS = "--max-old-space-size=8192"
+  # Suppress Next 16 telemetry during CI builds.
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
