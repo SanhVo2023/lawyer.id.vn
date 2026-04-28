@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "postinstall": "patch-package"
+    "lint": "eslint"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "^3.81.0",
@@ -33,7 +32,6 @@
     "dotenv": "^17.4.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
-    "patch-package": "^8.0.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

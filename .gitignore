@@ -41,9 +41,11 @@ next-env.d.ts
 # payload
 /src/payload-types.ts
 
-# Auto-generated PayloadCMS admin importMap (regenerated on dev start)
-/src/app/(payload)/admin/importMap.js
-/src/app/(payload)/admin/importMap.ts
+# PayloadCMS admin importMap — committed (with empty map) so Netlify builds work.
+# Locally, `payload` dev mode may regenerate this file. If you add custom admin
+# components, regenerate locally then commit the updated file.
+# /src/app/(payload)/admin/importMap.js
+# /src/app/(payload)/admin/importMap.ts
 
 # Claude Code local settings
 .claude/
