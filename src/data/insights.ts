@@ -744,6 +744,11 @@ const instructingCounsel: ArticleData = {
 // EXPORT
 // ============================================================================
 
+import { investorArticles } from './insights-investors'
+import { expatArticles } from './insights-expats'
+import { lawFirmArticles } from './insights-lawfirms'
+import { industryArticles } from './insights-industry'
+
 export const articlesData: Record<string, ArticleData> = {
   'top-legal-risks-foreign-investors-vietnam': topLegalRisks,
   'getting-divorced-vietnam-foreigner-guide': divorceGuide,
@@ -751,6 +756,10 @@ export const articlesData: Record<string, ArticleData> = {
   'due-diligence-checklist-vietnam': dueDiligence,
   'buying-property-vietnam-foreigner': buyingProperty,
   'instructing-local-counsel-vietnam': instructingCounsel,
+  ...investorArticles,
+  ...expatArticles,
+  ...lawFirmArticles,
+  ...industryArticles,
 }
 
 export const articleSlugs = Object.keys(articlesData)
