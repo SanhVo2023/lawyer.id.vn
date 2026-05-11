@@ -2,14 +2,18 @@
  * Single source of truth for the identity facts referenced across the site.
  * Used by: CredentialsBlock, JurisdictionsRow, MeetCounsel, contact pages,
  * SEO metadata helpers, and JSON-LD generators.
+ *
+ * Address block is post-2025 administrative-merger official EN canonical text
+ * sourced verbatim from workspace-root `address.txt`. Do not paraphrase.
  */
 
 export const IDENTITY = {
   name: 'Henry Vo',
   vietnameseName: 'Vo Thien Hien',
   title: 'Managing Partner',
-  firm: 'Apolo Lawyers',
-  firmUrl: 'https://apololawyers.com',
+  firm: 'APOLO LAWYERS - Solicitors & Litigators',
+  firmShort: 'Apolo Lawyers',
+  firmUrl: 'https://www.apololawyers.com',
 
   yearsExperience: 15,
   casesHandled: 500,
@@ -43,26 +47,41 @@ export const IDENTITY = {
   languages: ['English', 'Vietnamese'],
 
   email: 'contact@apolo.com.vn',
-  phone: '+84903419479',
-  whatsapp: '+84903419479',
+
+  // Call-center / firm hotline (used by WhatsApp button and primary CTA)
+  callCenterDisplay: '(+84) 903.419.479',
+  callCenterTel: '+84903419479',
+  callCenterWhatsApp: '84903419479',
+
   officeHours: 'Mon–Fri · 8:00 AM – 5:00 PM (GMT+7)',
 
   offices: [
     {
       label: 'Head Office',
       lines: [
-        '108 Tran Dinh Xu, Nguyen Cu Trinh Ward',
-        'District 1, Ho Chi Minh City, Vietnam',
+        '108 Tran Dinh Xu Street, Cau Ong Lanh Ward',
+        'Ho Chi Minh City, Vietnam',
+      ],
+      phones: [
+        { label: 'Office', display: '(+8428) 66.701.709', tel: '+842866701709' },
+        { label: 'Mobile', display: '(+84) 908.043.086', tel: '+84908043086' },
+        { label: 'Hotline', display: '(+84) 903.600.347', tel: '+84903600347' },
       ],
     },
     {
-      label: 'Branch Office',
+      label: 'East Saigon Branch — Apolo Lawyers Lawfirm',
       lines: [
-        'K&M Tower, 33 Ung Van Khiem, Ward 25',
-        'Binh Thanh District, Ho Chi Minh City',
+        '9th/F, Tower K&M Building, 33 Ung Van Khiem Street',
+        'Thanh My Tay Ward, Ho Chi Minh City, Vietnam',
+      ],
+      phones: [
+        { label: 'Office', display: '(+8428) 35.059.349', tel: '+842835059349' },
+        { label: 'Mobile', display: '(+84) 908.097.068', tel: '+84908097068' },
+        { label: 'Hotline', display: '(+84) 979.48.98.79', tel: '+84979489879' },
       ],
     },
   ],
 } as const
 
 export type IdentityCredential = (typeof IDENTITY)['credentials'][number]
+export type IdentityOffice = (typeof IDENTITY)['offices'][number]

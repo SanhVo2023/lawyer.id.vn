@@ -67,19 +67,19 @@ export function generatePersonJsonLd() {
     jobTitle: 'Managing Partner',
     worksFor: {
       '@type': 'LegalService',
-      name: 'Apolo Lawyers',
-      url: 'https://apololawyers.com',
+      name: 'APOLO LAWYERS - Solicitors & Litigators',
+      url: 'https://www.apololawyers.com',
     },
     address: [
       {
         '@type': 'PostalAddress',
-        streetAddress: '108 Tran Dinh Xu, Nguyen Cu Trinh Ward, District 1',
+        streetAddress: '108 Tran Dinh Xu Street, Cau Ong Lanh Ward',
         addressLocality: 'Ho Chi Minh City',
         addressCountry: 'VN',
       },
       {
         '@type': 'PostalAddress',
-        streetAddress: 'K&M Tower, 33 Ung Van Khiem, Ward 25, Binh Thanh District',
+        streetAddress: '9th/F, Tower K&M Building, 33 Ung Van Khiem Street, Thanh My Tay Ward',
         addressLocality: 'Ho Chi Minh City',
         addressCountry: 'VN',
       },
@@ -88,7 +88,7 @@ export function generatePersonJsonLd() {
     email: 'contact@apolo.com.vn',
     url: siteUrl,
     sameAs: [
-      'https://apololawyers.com',
+      'https://www.apololawyers.com',
       'https://vothienhien.com',
       'https://lawyersinvietnam.com',
     ],
@@ -106,7 +106,7 @@ export function generateLegalServiceJsonLd() {
     email: 'contact@apolo.com.vn',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '108 Tran Dinh Xu, Nguyen Cu Trinh Ward, District 1',
+      streetAddress: '108 Tran Dinh Xu Street, Cau Ong Lanh Ward',
       addressLocality: 'Ho Chi Minh City',
       addressCountry: 'VN',
     },

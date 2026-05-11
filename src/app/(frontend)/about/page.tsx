@@ -287,10 +287,10 @@ export default function AboutPage() {
                       {IDENTITY.email}
                     </a>
                     <a
-                      href={`tel:${IDENTITY.phone}`}
+                      href={`tel:${IDENTITY.callCenterTel}`}
                       className="block text-primary hover:text-accent transition-colors"
                     >
-                      {IDENTITY.phone}
+                      {IDENTITY.callCenterDisplay}
                     </a>
                     <p className="text-xs text-text-secondary font-[family-name:var(--font-inter)]">
                       {IDENTITY.officeHours}

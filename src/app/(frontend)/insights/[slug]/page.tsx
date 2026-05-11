@@ -8,7 +8,7 @@ import TableOfContents from '@/components/insights/TableOfContents'
 import PullQuote from '@/components/insights/PullQuote'
 import KeyTakeaways from '@/components/insights/KeyTakeaways'
 import { generatePageMetadata, generateBreadcrumbJsonLd } from '@/lib/metadata'
-import { articlesData, articleSlugs } from '@/data/insights'
+import { articlesData, articleSlugs, DEFAULT_AUTHOR } from '@/data/insights'
 import { practiceAreasData } from '@/data/practice-areas'
 import { articlesIndex } from '@/data/insights-index'
 
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = articlesData[slug]
   if (!a) return {}
   return generatePageMetadata({
-    title: `${a.title} — Henry Vo`,
+    title: a.title,
     description: a.excerpt,
     path: `/insights/${slug}`,
   })
@@ -35,6 +35,9 @@ export default async function InsightDetailPage({ params }: Props) {
   const { slug } = await params
   const a = articlesData[slug]
   if (!a) notFound()
+
+  const author = a.author ?? DEFAULT_AUTHOR
+  const isHenry = author === 'Henry Vo'
 
   const relatedArticleEntries = a.relatedArticles
     .map((s) => articlesIndex[s])
@@ -55,8 +58,10 @@ export default async function InsightDetailPage({ params }: Props) {
       '@type': 'BlogPosting',
       headline: a.title,
       datePublished: a.date,
-      author: { '@type': 'Person', name: 'Henry Vo', url: 'https://lawyer.id.vn/about' },
-      publisher: { '@type': 'LegalService', name: 'Apolo Lawyers', url: 'https://apololawyers.com' },
+      author: isHenry
+        ? { '@type': 'Person', name: 'Henry Vo', url: 'https://lawyer.id.vn/about' }
+        : { '@type': 'Organization', name: author, url: 'https://www.apololawyers.com' },
+      publisher: { '@type': 'LegalService', name: 'APOLO LAWYERS - Solicitors & Litigators', url: 'https://www.apololawyers.com' },
     },
   ]
 
@@ -71,6 +76,7 @@ export default async function InsightDetailPage({ params }: Props) {
         readTime={a.readTime}
         heroImageId={a.heroImageId}
         excerpt={a.excerpt}
+        author={author}
       />
 
       <article className="py-10 sm:py-14 md:py-20 lg:py-24">

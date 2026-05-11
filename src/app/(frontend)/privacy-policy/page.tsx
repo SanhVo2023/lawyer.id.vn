@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <p>
                 <strong>Email:</strong> contact@apolo.com.vn<br />
-                <strong>Address:</strong> 108 Tran Dinh Xu, Nguyen Cu Trinh Ward, District 1, Ho Chi Minh City, Vietnam
+                <strong>Address:</strong> 108 Tran Dinh Xu Street, Cau Ong Lanh Ward, Ho Chi Minh City, Vietnam
               </p>
             </section>
           </div>

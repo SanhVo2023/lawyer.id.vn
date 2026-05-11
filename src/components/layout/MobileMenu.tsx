@@ -93,7 +93,7 @@ export default function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProp
                 href="https://wa.me/84903419479"
                 className="text-sm text-accent font-[family-name:var(--font-inter)]"
               >
-                WhatsApp: +84 903 419 479
+                WhatsApp: (+84) 903.419.479
               </a>
               <p className="mt-1 text-xs text-white/40 font-[family-name:var(--font-inter)]">
                 Mon-Fri, 8:00 AM - 5:00 PM (GMT+7)

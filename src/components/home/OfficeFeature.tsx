@@ -80,10 +80,10 @@ export default function OfficeFeature() {
             <div className="mt-6 h-[2px] w-20 bg-accent" />
 
             <p className="mt-8 text-lg text-text-secondary leading-relaxed">
-              Located in the heart of District 1, Ho Chi Minh City — Vietnam&apos;s
-              business and legal hub. Our offices are designed for international clients,
-              with private consultation rooms, video-conferencing facilities, and
-              English-speaking support staff.
+              Two offices in Ho Chi Minh City — Vietnam&apos;s business and legal hub.
+              Our offices are designed for international clients, with private
+              consultation rooms, video-conferencing facilities, and English-speaking
+              support staff.
             </p>
 
             {/* Address features */}
@@ -111,13 +111,22 @@ export default function OfficeFeature() {
               ))}
             </div>
 
-            <div className="mt-10 rounded-sm border border-border bg-white p-6">
-              <p className="text-sm font-medium text-primary mb-1">Head Office</p>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                108 Tran Dinh Xu, Nguyen Cu Trinh Ward<br />
-                District 1, Ho Chi Minh City, Vietnam
-              </p>
-              <p className="mt-3 text-xs text-text-secondary font-[family-name:var(--font-inter)]">
+            <div className="mt-10 grid sm:grid-cols-2 gap-4">
+              <div className="rounded-sm border border-border bg-white p-6">
+                <p className="text-sm font-medium text-primary mb-1">Head Office</p>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  108 Tran Dinh Xu Street, Cau Ong Lanh Ward<br />
+                  Ho Chi Minh City, Vietnam
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-white p-6">
+                <p className="text-sm font-medium text-primary mb-1">East Saigon Branch</p>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  9th/F, Tower K&M Building, 33 Ung Van Khiem Street<br />
+                  Thanh My Tay Ward, Ho Chi Minh City, Vietnam
+                </p>
+              </div>
+              <p className="sm:col-span-2 text-xs text-text-secondary font-[family-name:var(--font-inter)]">
                 Mon–Fri · 8:00 AM – 5:00 PM (GMT+7)
               </p>
             </div>

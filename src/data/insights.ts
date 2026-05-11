@@ -23,7 +23,13 @@ export interface ArticleData {
   authorNote: string
   relatedArticles: string[]
   relatedPracticeAreas: string[]
+  /** Author byline. Defaults to the editorial team. Set to 'Henry Vo' only for
+   *  articles personally authored by Mr Hien — per Hien feedback F-002, AI/staff-drafted
+   *  articles must not carry his byline. */
+  author?: string
 }
+
+export const DEFAULT_AUTHOR = 'Apolo Editorial Team'
 
 // ============================================================================
 // 1. TOP 5 LEGAL RISKS FOR FOREIGN INVESTORS

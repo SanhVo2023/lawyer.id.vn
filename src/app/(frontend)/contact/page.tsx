@@ -4,10 +4,11 @@ import HubHero from '@/components/layout/HubHero'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import ContactForm from './ContactForm'
 import { generatePageMetadata, generateBreadcrumbJsonLd, generatePersonJsonLd } from '@/lib/metadata'
+import { IDENTITY } from '@/data/identity'
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Contact Henry Vo — International Lawyer in Vietnam',
-  description: 'Get in touch with Henry Vo for a confidential consultation. WhatsApp, email, or contact form. We respond within 24 hours. Office in District 1, Ho Chi Minh City.',
+  description: 'Get in touch with Henry Vo for a confidential consultation. WhatsApp, email, or contact form. We respond within 24 hours. Two offices in Ho Chi Minh City.',
   path: '/contact',
 })
 
@@ -69,16 +70,16 @@ export default function ContactPage() {
                     <div>
                       <dt className="text-text-secondary">Email</dt>
                       <dd>
-                        <a href="mailto:contact@apolo.com.vn" className="text-primary hover:text-accent transition-colors">
-                          contact@apolo.com.vn
+                        <a href={`mailto:${IDENTITY.email}`} className="text-primary hover:text-accent transition-colors">
+                          {IDENTITY.email}
                         </a>
                       </dd>
                     </div>
                     <div>
-                      <dt className="text-text-secondary">Phone</dt>
+                      <dt className="text-text-secondary">Call Center</dt>
                       <dd>
-                        <a href="tel:+84903419479" className="text-primary hover:text-accent transition-colors">
-                          +84 903 419 479
+                        <a href={`tel:${IDENTITY.callCenterTel}`} className="text-primary hover:text-accent transition-colors">
+                          {IDENTITY.callCenterDisplay}
                         </a>
                       </dd>
                     </div>
@@ -90,21 +91,32 @@ export default function ContactPage() {
                   <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-accent font-[family-name:var(--font-inter)] mb-4">
                     Offices
                   </h3>
-                  <div className="space-y-4 text-sm">
-                    <div>
-                      <p className="font-medium text-primary mb-1">Head Office</p>
-                      <p className="text-text-secondary">
-                        108 Tran Dinh Xu, Nguyen Cu Trinh Ward<br />
-                        District 1, Ho Chi Minh City, Vietnam
-                      </p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-primary mb-1">Branch Office</p>
-                      <p className="text-text-secondary">
-                        K&M Tower, 33 Ung Van Khiem, Ward 25<br />
-                        Binh Thanh District, Ho Chi Minh City
-                      </p>
-                    </div>
+                  <div className="space-y-6 text-sm">
+                    {IDENTITY.offices.map((office) => (
+                      <div key={office.label}>
+                        <p className="font-medium text-primary mb-1">{office.label}</p>
+                        <p className="text-text-secondary">
+                          {office.lines.map((line, idx) => (
+                            <span key={line}>
+                              {line}
+                              {idx < office.lines.length - 1 && <br />}
+                            </span>
+                          ))}
+                        </p>
+                        <dl className="mt-2 space-y-0.5">
+                          {office.phones.map((p) => (
+                            <div key={p.tel} className="flex gap-2">
+                              <dt className="text-text-secondary/70 min-w-[3.5rem]">{p.label}:</dt>
+                              <dd>
+                                <a href={`tel:${p.tel}`} className="text-primary hover:text-accent transition-colors">
+                                  {p.display}
+                                </a>
+                              </dd>
+                            </div>
+                          ))}
+                        </dl>
+                      </div>
+                    ))}
                   </div>
                 </div>
 

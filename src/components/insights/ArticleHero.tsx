@@ -10,6 +10,7 @@ interface ArticleHeroProps {
   readTime: string
   heroImageId: ImageId
   excerpt: string
+  author: string
 }
 
 function formatDate(dateStr: string) {
@@ -27,6 +28,7 @@ export default function ArticleHero({
   readTime,
   heroImageId,
   excerpt,
+  author,
 }: ArticleHeroProps) {
   const hero = IMAGES[heroImageId]
 
@@ -70,7 +72,7 @@ export default function ArticleHero({
           <p className="mt-6 text-lg text-white/80 leading-relaxed">{excerpt}</p>
 
           <p className="mt-8 text-sm text-white/50 font-[family-name:var(--font-inter)]">
-            By Henry Vo · {formatDate(date)}
+            By {author} · {formatDate(date)}
           </p>
         </div>
       </div>
