@@ -4,7 +4,9 @@
  * SEO metadata helpers, and JSON-LD generators.
  *
  * Address block is post-2025 administrative-merger official EN canonical text
- * sourced verbatim from workspace-root `address.txt`. Do not paraphrase.
+ * sourced from workspace-root `address.txt`. Contact info (phone, hours, direct
+ * email, credentials, jurisdictions) reflects Round 2 owner-review revisions
+ * (Feedback round 2.xlsx sheet `3.-lawyer.id.vn`, 17/5/2026). Do not paraphrase.
  */
 
 export const IDENTITY = {
@@ -14,46 +16,34 @@ export const IDENTITY = {
   firm: 'APOLO LAWYERS - Solicitors & Litigators',
   firmShort: 'Apolo Lawyers',
   firmUrl: 'https://www.apololawyers.com',
+  managingPartnerSince: 2018,
 
-  yearsExperience: 15,
+  yearsExperience: 20,
   casesHandled: 500,
   countriesServed: 20,
 
   credentials: [
-    {
-      label: 'Vietnam Bar Federation',
-      detail: 'Licensed Attorney since 2010',
-      year: 2010,
-    },
-    {
-      label: 'VIAC Arbitrator',
-      detail: 'Panel member since 2018',
-      year: 2018,
-    },
-    {
-      label: 'International Bar Association',
-      detail: 'Associate member since 2020',
-      year: 2020,
-    },
-    {
-      label: 'HCMC University of Law',
-      detail: 'JD-equivalent, graduated 2008',
-      year: 2008,
-    },
+    { label: 'Vietnam Bar Federation', detail: 'Member' },
+    { label: 'VIAC Arbitration', detail: 'Arbitration counsel experience' },
+    { label: 'Association of European Attorneys', detail: 'Member of AEA' },
+    { label: 'Ho Chi Minh City University of Law', detail: 'Legal education' },
   ],
 
-  jurisdictions: ['VIAC', 'SIAC', 'ICC', 'NYC', 'Vietnam Courts'],
+  jurisdictions: ['VIAC', 'SIAC', 'ICC', 'Vietnam Courts'],
 
-  languages: ['English', 'Vietnamese'],
+  languages: ['Vietnamese', 'English'],
 
+  // Firm-routing email (footer firm-info block, both offices).
   email: 'contact@apolo.com.vn',
+  // Direct partner email (contact-page Direct Contact card).
+  directEmail: 'hien.vo@apololawyers.com',
 
-  // Call-center / firm hotline (used by WhatsApp button and primary CTA)
-  callCenterDisplay: '(+84) 903.419.479',
-  callCenterTel: '+84903419479',
-  callCenterWhatsApp: '84903419479',
+  // Primary CTA / WhatsApp number (Henry Vo's direct line, per Round 2).
+  callCenterDisplay: '(+84) 913.479.179',
+  callCenterTel: '+84913479179',
+  callCenterWhatsApp: '84913479179',
 
-  officeHours: 'Mon–Fri · 8:00 AM – 5:00 PM (GMT+7)',
+  officeHours: 'Mon–Fri · 8:30 AM – 6:00 PM (GMT+7)',
 
   offices: [
     {
@@ -64,8 +54,7 @@ export const IDENTITY = {
       ],
       phones: [
         { label: 'Office', display: '(+8428) 66.701.709', tel: '+842866701709' },
-        { label: 'Mobile', display: '(+84) 908.043.086', tel: '+84908043086' },
-        { label: 'Hotline', display: '(+84) 903.600.347', tel: '+84903600347' },
+        { label: 'Direct', display: '(+84) 913.479.179', tel: '+84913479179' },
       ],
     },
     {
@@ -75,9 +64,8 @@ export const IDENTITY = {
         'Thanh My Tay Ward, Ho Chi Minh City, Vietnam',
       ],
       phones: [
-        { label: 'Office', display: '(+8428) 35.059.349', tel: '+842835059349' },
-        { label: 'Mobile', display: '(+84) 908.097.068', tel: '+84908097068' },
-        { label: 'Hotline', display: '(+84) 979.48.98.79', tel: '+84979489879' },
+        { label: 'Office', display: '(+8428) 35 059 349', tel: '+842835059349' },
+        { label: 'Direct', display: '(+84) 913.479.179', tel: '+84913479179' },
       ],
     },
   ],

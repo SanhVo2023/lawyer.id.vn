@@ -70,13 +70,13 @@ export default function ContactPage() {
                     <div>
                       <dt className="text-text-secondary">Email</dt>
                       <dd>
-                        <a href={`mailto:${IDENTITY.email}`} className="text-primary hover:text-accent transition-colors">
-                          {IDENTITY.email}
+                        <a href={`mailto:${IDENTITY.directEmail}`} className="text-primary hover:text-accent transition-colors">
+                          {IDENTITY.directEmail}
                         </a>
                       </dd>
                     </div>
                     <div>
-                      <dt className="text-text-secondary">Call Center</dt>
+                      <dt className="text-text-secondary">Phone</dt>
                       <dd>
                         <a href={`tel:${IDENTITY.callCenterTel}`} className="text-primary hover:text-accent transition-colors">
                           {IDENTITY.callCenterDisplay}
@@ -127,10 +127,10 @@ export default function ContactPage() {
                   </h3>
                   <p className="text-sm text-text-secondary">
                     Monday - Friday<br />
-                    8:00 AM - 5:00 PM (GMT+7, Indochina Time)
+                    8:30 AM - 6:00 PM (GMT+7, Indochina Time)
                   </p>
                   <p className="text-xs text-text-secondary mt-3">
-                    Languages: English, Vietnamese
+                    Languages: Vietnamese, English
                   </p>
                 </div>
               </div>

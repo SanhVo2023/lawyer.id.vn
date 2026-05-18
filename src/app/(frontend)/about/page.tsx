@@ -12,79 +12,73 @@ import { IMAGES } from '@/lib/images'
 import { IDENTITY } from '@/data/identity'
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'About Henry Vo — International Lawyer in Vietnam',
+  title: 'About Henry Vo — Vietnamese Lawyer for International Clients',
   description:
-    'Henry Vo (Vo Thien Hien) — Managing Partner at Apolo Lawyers, with 15+ years representing foreign clients in Vietnam across civil litigation, corporate, family law, criminal defense, and international arbitration.',
+    'Henry Vo (Vo Thien Hien) — Managing Partner of Apolo Lawyers since 2018. Vietnamese lawyer with over 20 years of practice representing foreign clients in Vietnam across civil litigation, corporate, family law, criminal defence, and arbitration.',
   path: '/about',
 })
 
 const timeline = [
   {
-    year: '2008',
-    title: 'Graduated, HCMC University of Law',
+    year: 'Education',
+    title: 'Ho Chi Minh City University of Law',
     description:
-      'Completed law degree with honors in civil and commercial law. Began specialised post-graduate training at the Judicial Academy of Vietnam.',
+      'Completed legal education in civil and commercial law. Followed by post-graduate professional training at the Judicial Academy of Vietnam.',
   },
   {
-    year: '2010',
-    title: 'Admitted to Vietnam Bar Federation',
+    year: 'Bar',
+    title: 'Vietnam Bar Federation',
     description:
-      "Licensed Attorney following bar examination. Joined the Ho Chi Minh City Bar Association as a full member.",
+      'Admitted as a Member of the Vietnam Bar Federation and the Ho Chi Minh City Bar Association.',
   },
   {
-    year: '2012',
-    title: 'First international engagement',
+    year: 'Practice',
+    title: 'Two decades of legal practice',
     description:
-      'Represented a Korean manufacturing company in a commercial dispute against its Vietnamese distributor. The matter sparked a deliberate focus on cross-border practice.',
+      'Over 20 years of legal practice in Vietnam focusing on civil litigation, corporate law, family law, criminal defence, and arbitration related matters for foreign clients.',
   },
   {
-    year: '2015',
-    title: 'Founded Apolo Lawyers',
+    year: 'Since 2018',
+    title: 'Managing Partner, Apolo Lawyers',
     description:
-      'Established Apolo Lawyers with a focused mission: combine deep Vietnamese legal expertise with the cross-cultural fluency that international clients need. Two offices in HCMC.',
+      'Has led Apolo Lawyers as Managing Partner since 2018, overseeing legal strategy, case management, and professional direction across the firm.',
   },
   {
-    year: '2018',
-    title: 'VIAC Arbitrator panel',
+    year: 'Arbitration',
+    title: 'VIAC arbitration counsel experience',
     description:
-      'Appointed to the Vietnam International Arbitration Centre arbitrator panel — recognised for expertise in international commercial arbitration.',
+      'Arbitration counsel experience in matters before the Vietnam International Arbitration Centre, working with clients from multiple jurisdictions.',
   },
   {
-    year: '2020',
-    title: 'IBA membership and global network',
+    year: 'Memberships',
+    title: 'Association of European Attorneys (AEA)',
     description:
-      'Joined the International Bar Association as Associate Member. Expanded working relationships with foreign law firms across Europe, North America, and Asia.',
+      'Member of the Association of European Attorneys, supporting cross-border working relationships with foreign law firms.',
   },
   {
-    year: '2023',
-    title: 'Speaking and thought leadership',
+    year: 'International',
+    title: 'Clients from 20+ countries',
     description:
-      'Regular speaker at international legal conferences on Vietnamese investment law, dispute resolution, and cross-border practice.',
-  },
-  {
-    year: '2025',
-    title: '500+ matters handled',
-    description:
-      'Crossed the 500 representative-matter milestone, with international clients from 20+ countries across civil, corporate, family, criminal, and arbitration practice.',
+      'Serving Fortune 500 companies, family-owned businesses, expatriate individuals, and foreign law firms seeking reliable local counsel in Vietnam.',
   },
 ]
 
 const recognition = [
   {
-    title: 'VIAC Arbitrator Panel',
-    detail: 'Vietnam International Arbitration Centre — international commercial disputes',
+    title: 'VIAC Arbitration',
+    detail: 'Arbitration counsel experience in matters before the Vietnam International Arbitration Centre',
   },
   {
-    title: 'Selected to write for legal publications',
-    detail: 'Regular contributor to Vietnamese and international legal commentary',
+    title: 'Association of European Attorneys',
+    detail: 'Member of the AEA — cross-border working network with foreign law firms',
   },
   {
-    title: 'Speaker, regional legal conferences',
+    title: 'Speaker, regional legal forums',
     detail: 'On Vietnamese investment law, dispute resolution, and cross-border practice',
   },
   {
-    title: 'Featured local counsel for foreign law firms',
-    detail: 'Regularly engaged by Magic Circle, US AmLaw 100, and regional Asian firms',
+    title: 'Local counsel for foreign law firms',
+    detail: 'Engaged by international law firms requiring reliable Vietnamese-law representation',
   },
 ]
 
@@ -98,7 +92,7 @@ export default function AboutPage() {
       ...generatePersonJsonLd(),
       '@type': ['Person', 'Attorney', 'ProfilePage'],
       description:
-        'Henry Vo (Vo Thien Hien) is a Managing Partner at Apolo Lawyers specializing in representing foreign clients in Vietnam across civil litigation, corporate law, family law, criminal defense, and international arbitration.',
+        'Henry Vo (Vo Thien Hien) is the Managing Partner of Apolo Lawyers since 2018, with over 20 years of legal practice in Vietnam representing foreign clients in civil litigation, corporate law, family law, criminal defence, and arbitration.',
     },
   ]
 
@@ -154,10 +148,13 @@ export default function AboutPage() {
             <div className="mt-8 h-[2px] w-24 bg-accent" />
 
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/85 leading-relaxed">
-              An internationally-experienced Vietnamese lawyer. Fifteen years of practice
-              representing foreign individuals, foreign-invested enterprises, and overseas
-              corporations in civil litigation, corporate law, family matters, criminal
-              defense, and international arbitration.
+              A Vietnamese lawyer with over {IDENTITY.yearsExperience} years of legal
+              practice in Vietnam and international client experience. Since{' '}
+              {IDENTITY.managingPartnerSince}, he has led {IDENTITY.firmShort} as
+              Managing Partner, advising and representing foreign individuals,
+              foreign-invested enterprises and overseas corporations in civil
+              litigation, corporate law, family matters, criminal defence and
+              arbitration related matters.
             </p>
 
             <div className="mt-10">
@@ -177,50 +174,47 @@ export default function AboutPage() {
                 Biography
               </span>
               <h2 className="mt-6 text-3xl md:text-4xl font-bold text-primary leading-tight">
-                A career built on{' '}
+                A Vietnamese Lawyer for{' '}
                 <span className="italic text-accent font-[family-name:var(--font-heading)]">
-                  international counsel
-                </span>
+                  International Clients
+                </span>{' '}
+                in Vietnam
               </h2>
               <div className="mt-6 h-[2px] w-20 bg-accent" />
 
               <div className="mt-10 prose prose-lg max-w-none text-text-secondary leading-relaxed space-y-6">
                 <p className="text-xl text-primary font-medium">
-                  My practice has been shaped by a single conviction: foreign clients
-                  navigating Vietnam&apos;s legal system deserve counsel that meets the
-                  standard of any major international jurisdiction.
+                  Lawyer Vo Thien Hien, also known as Henry Vo, is a Vietnamese lawyer
+                  with more than {IDENTITY.yearsExperience} years of legal practice
+                  experience in Vietnam, focusing on litigation, arbitration, dispute
+                  resolution and legal advisory work.
                 </p>
                 <p>
-                  I was admitted to the Vietnam Bar Federation in 2010 after completing
-                  legal education at Ho Chi Minh City University of Law and post-graduate
-                  training at the Judicial Academy of Vietnam. From the start, my practice
-                  focused on the kinds of matters where clients face the unfamiliar:
-                  cross-border commercial disputes, foreign-invested transactions,
-                  international family-law matters, criminal defence for foreign nationals,
-                  and arbitration before Vietnamese and international tribunals.
+                  He assists foreign clients, expatriates living in Vietnam,
+                  foreign-invested enterprises and overseas law firms that require
+                  reliable local counsel with a practical understanding of Vietnamese
+                  law, procedures and legal practice.
                 </p>
                 <p>
-                  In 2015 I founded Apolo Lawyers with a clear mission — build a Vietnamese
-                  legal practice that international clients could trust as fully as their
-                  home-country counsel. Two offices in Ho Chi Minh City, a network of
-                  trusted accountants, notaries, and translators, and direct working
-                  relationships with foreign law firms across Europe, North America, and
-                  Asia.
+                  Since {IDENTITY.managingPartnerSince}, Lawyer Vo Thien Hien has served
+                  as the Managing Partner of {IDENTITY.firmShort}. In this role, he
+                  oversees legal strategy, case management and professional direction,
+                  and has been directly involved in matters with foreign elements across
+                  civil litigation, commercial disputes, corporate law, family law,
+                  criminal defence and arbitration.
                 </p>
                 <p>
-                  Recognition has followed the work. In 2018 I was appointed to the Vietnam
-                  International Arbitration Centre&apos;s arbitrator panel. In 2020 I joined
-                  the International Bar Association as an associate member. Today my
-                  practice serves clients from {IDENTITY.countriesServed}+ countries — from
-                  Fortune 500 companies and family-owned manufacturers to individual expats
-                  and the foreign law firms that retain me as their local counsel of choice.
+                  His practice serves clients from more than {IDENTITY.countriesServed}{' '}
+                  countries — including Fortune 500 companies, family-owned businesses,
+                  expatriate individuals and foreign law firms — through direct
+                  partner-level engagement supported by an English-speaking legal team
+                  responsive to cross-border working requirements.
                 </p>
                 <p>
-                  Beyond client work, I write and speak regularly on Vietnamese investment
-                  law, dispute resolution, and the practical realities of cross-border
-                  practice. I believe the best lawyers are also teachers — and that
-                  contributing to the broader conversation makes me better at the day
-                  job.
+                  Outside client work, he contributes to legal commentary and
+                  professional discussion on Vietnamese law, with the view that clear
+                  explanation of legal concepts is part of effective representation for
+                  international clients.
                 </p>
               </div>
             </div>
@@ -235,14 +229,14 @@ export default function AboutPage() {
                   </h3>
                   <dl className="space-y-3">
                     {[
-                      { label: 'Practice', value: 'International law' },
-                      { label: 'Bar', value: 'Vietnam (since 2010)' },
-                      { label: 'Firm', value: IDENTITY.firm },
+                      { label: 'Practice', value: 'Litigation, Arbitration & Cross-Border Matters' },
+                      { label: 'Bar', value: 'Vietnam' },
+                      { label: 'Firm', value: IDENTITY.firmShort },
                       { label: 'Title', value: IDENTITY.title },
-                      { label: 'Languages', value: IDENTITY.languages.join(', ') },
-                      { label: 'Location', value: 'Ho Chi Minh City' },
-                      { label: 'Education', value: 'HCMC University of Law' },
-                      { label: 'VIAC Panel', value: 'Since 2018' },
+                      { label: 'Languages', value: IDENTITY.languages.join('; ') },
+                      { label: 'Location', value: 'Ho Chi Minh City, Vietnam' },
+                      { label: 'Education', value: 'Ho Chi Minh City University of Law' },
+                      { label: 'Arbitration', value: 'Counsel experience in VIAC matters' },
                     ].map((fact) => (
                       <div
                         key={fact.label}
@@ -281,10 +275,10 @@ export default function AboutPage() {
                   </span>
                   <div className="mt-3 space-y-2 text-sm">
                     <a
-                      href={`mailto:${IDENTITY.email}`}
+                      href={`mailto:${IDENTITY.directEmail}`}
                       className="block text-primary hover:text-accent transition-colors"
                     >
-                      {IDENTITY.email}
+                      {IDENTITY.directEmail}
                     </a>
                     <a
                       href={`tel:${IDENTITY.callCenterTel}`}
@@ -334,23 +328,25 @@ export default function AboutPage() {
 
               <div className="mt-8 space-y-5 text-text-secondary leading-relaxed">
                 <p>
-                  When I first represented an international client in 2012 — a Korean
-                  manufacturer in a commercial dispute against its Vietnamese distributor —
-                  the experience exposed something that has shaped my practice ever since.
-                  The substantive law was Vietnamese; the procedure was Vietnamese; the
-                  evidence sat across three countries. None of that was the hard part.
+                  International clients often come to Vietnam with legitimate concerns:
+                  a different legal system, unfamiliar procedures, language barriers, and
+                  uncertainty about how decisions are made in practice. These concerns are
+                  understandable. Vietnamese law has its own structure, logic and
+                  procedures, and effective legal support requires more than translating
+                  statutes or court documents.
                 </p>
                 <p>
-                  The hard part was that my client felt they were navigating a foreign legal
-                  system without a guide. Not because the system was opaque — Vietnamese
-                  procedure is structured and reasonably predictable to those who know it —
-                  but because no one had explained it to them in their own language, on their
-                  own terms, with the cultural context that made the procedural choices make
-                  sense.
+                  My practice is built on helping foreign clients understand Vietnam&apos;s
+                  legal system in a clear, practical and strategic way. This means
+                  explaining the law in context, identifying the real legal and procedural
+                  risks, assessing evidence carefully, and guiding clients through each
+                  stage of a dispute, transaction or legal matter with realistic options.
                 </p>
                 <p>
-                  That is the gap my practice was designed to close. Vietnamese law,
-                  delivered with international fluency.
+                  With more than {IDENTITY.yearsExperience} years of experience and a
+                  supporting English-speaking team, this is the gap the practice is
+                  designed to close — Vietnamese law, delivered with international
+                  fluency.
                 </p>
               </div>
             </div>
@@ -544,8 +540,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading
             label="Credentials"
-            title="Verified professional standing"
-            subtitle="Bar admission, arbitrator status, professional memberships, and education — verifiable and current."
+            title="Professional standing"
+            subtitle="Legal practice credentials, professional memberships, arbitration experience, and education."
           />
           <div className="max-w-4xl mx-auto rounded-sm border border-border bg-white p-10">
             <CredentialsBlock variant="list" showLabel={false} />
@@ -579,8 +575,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <SectionHeading
             label="Career"
-            title="Professional Timeline"
-            subtitle="Two decades from law school to international practice."
+            title="Professional Background"
+            subtitle="Two decades of Vietnamese legal practice serving international clients."
           />
           <div className="relative max-w-3xl mx-auto">
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
@@ -752,9 +748,9 @@ export default function AboutPage() {
       <section className="py-16 border-y border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <p className="text-sm text-text-secondary font-[family-name:var(--font-inter)]">
-            Henry Vo is the Managing Partner at{' '}
+            Henry Vo is the Managing Partner of{' '}
             <a
-              href="https://apololawyers.com"
+              href="https://www.apololawyers.com"
               className="text-accent hover:underline"
               target="_blank"
               rel="noopener noreferrer"

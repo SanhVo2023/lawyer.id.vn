@@ -1881,6 +1881,279 @@ const internationalArbitration: PracticeAreaData = {
 }
 
 // ============================================================================
+// 8. FDI, INVESTMENT & IMMIGRATION
+// ============================================================================
+
+const fdiInvestmentImmigration: PracticeAreaData = {
+  title: 'FDI, Investment & Immigration',
+  tagline:
+    'Legal support for foreign investors and expatriates in Vietnam — company setup, M&A, investment structuring, visas, TRCs and work permits, delivered with an integrated transactional and immigration perspective.',
+  introTagline: 'Practice Area · FDI, Investment & Immigration',
+  heroImageId: 'practiceCorporate',
+  metaDescription:
+    'Foreign direct investment and immigration lawyer in Vietnam. Company setup, M&A, investment structuring, visas, temporary residence cards, and work permits for foreign investors and expatriates.',
+
+  introduction: [
+    'Foreign Direct Investment into Vietnam continues to expand — across manufacturing, technology, energy, real estate, services, retail, and consumer products. Each sector carries its own market-entry conditions under the Law on Investment 2020 and the Law on Enterprises 2020, sometimes layered with sector-specific decrees and circulars that change between years. The same is true for the immigration framework that governs the executives, technical specialists, and family members who actually move to Vietnam to operate the investment.',
+    'My practice supports foreign investors and expatriates through the full lifecycle: from sector access analysis, investment registration certificate (IRC) and enterprise registration certificate (ERC) at market entry, through capital structuring and intercompany arrangements, M&A and joint-venture transactions, to the issuance of business visas, work permits, temporary residence cards (TRCs), and (where eligible) permanent residence applications for foreign staff and family.',
+    'Treating the corporate and immigration tracks together — rather than as separate silos — avoids the most common foreign-investor pitfalls: declared charter capital that does not match the work-permit case for foreign employees, IRC sectoral activities that do not align with the operations the expat staff are actually performing, and TRC categories that do not match the underlying employment structure.',
+  ],
+  whyItMatters: [
+    'Vietnam runs both the investment regime and the immigration regime through structured documentary processes. Mistakes early — wrong vehicle, undercapitalised IRC, mismatched work-permit category — are expensive to fix and visible to regulators on every subsequent filing. Getting the structure right from day one is the single highest-value step in foreign market entry.',
+    'For expatriate individuals, the framework is administratively dense but workable when planned ahead. Business visas, work permits under Decree 152/2020/ND-CP, TRCs under the Law on Foreigners 2014 (as amended), and dependant arrangements for family members each have specific eligibility tests and document chains. Aligning them with the underlying employment or investment is the work that separates a smooth move from a stressful one.',
+    'M&A and joint-venture transactions involving Vietnamese targets add a further procedural layer: M&A approvals where foreign ownership crosses statutory thresholds, sectoral conditions on the target activities, antitrust filings where the deal meets size triggers, and post-closing implementation of the change of investor recorded against the IRC and ERC.',
+  ],
+
+  keyLegalFramework: [
+    {
+      code: 'Law on Investment 2020 (Law 61/2020/QH14)',
+      description:
+        'Framework for foreign investment in Vietnam — conditional business lines, investment forms, IRC issuance, M&A approval procedure, investment incentives.',
+    },
+    {
+      code: 'Law on Enterprises 2020 (Law 59/2020/QH14)',
+      description:
+        'Corporate-law framework — LLC, JSC, and other enterprise forms; charter capital; shareholder rights; corporate governance; ERC procedure.',
+    },
+    {
+      code: 'Decree 31/2021/ND-CP',
+      description:
+        'Implementing Decree to the Law on Investment 2020 — detailed conditional business lines, IRC application content, and procedural rules.',
+    },
+    {
+      code: 'Law on Foreigners 2014 (as amended)',
+      description:
+        'Entry, exit, transit and residence of foreigners in Vietnam — visa categories, temporary residence cards, permanent residence eligibility.',
+    },
+    {
+      code: 'Decree 152/2020/ND-CP (as amended)',
+      description:
+        'Work permits for foreign employees — eligibility, application procedure, exempt categories, employer obligations.',
+    },
+    {
+      code: 'Competition Law 2018 (Law 23/2018/QH14)',
+      description:
+        'Economic concentration filings for M&A transactions meeting statutory size thresholds — pre-merger notification to the Vietnam Competition Authority.',
+    },
+  ],
+
+  problemStatements: [
+    {
+      title: 'Sectoral access can derail entry',
+      description:
+        'Conditional business lines, foreign ownership caps, and sub-sector approvals must be mapped before any capital commitment — a missed condition can require complete restructuring.',
+      iconId: 'iconGlobe',
+    },
+    {
+      title: 'Corporate and immigration must align',
+      description:
+        'Declared charter capital, IRC activities, employment contracts, and work-permit categories form one chain — misalignment surfaces at the worst possible moment.',
+      iconId: 'iconContract',
+    },
+    {
+      title: 'Procedures are paperwork-heavy',
+      description:
+        'IRC, ERC, work permits, TRCs, and M&A approvals each require notarised, apostilled, and translated foreign documents — coordinated carefully or the timeline doubles.',
+      iconId: 'iconScales',
+    },
+  ],
+
+  whoIHelp: [
+    {
+      persona: 'Foreign Investors & Multinationals',
+      needs:
+        'Companies entering Vietnam for the first time, expanding existing operations, or restructuring foreign-invested vehicles for tax efficiency or M&A exit.',
+      iconId: 'iconGlobe',
+      examples: [
+        'Market-entry investment vehicle selection (LLC vs JSC vs rep office vs branch)',
+        'Investment Registration Certificate (IRC) and Enterprise Registration Certificate (ERC) issuance',
+        'Charter capital structuring and contribution scheduling',
+        'M&A approval procedure for share or asset acquisitions',
+      ],
+    },
+    {
+      persona: 'Expatriate Individuals & Families',
+      needs:
+        'Executives, technical specialists, entrepreneurs and their family members moving to Vietnam under business, employment or investor arrangements.',
+      iconId: 'iconHandshake',
+      examples: [
+        'Business visas, work permits, and work-permit exemption applications',
+        'Temporary Residence Cards (TRCs) for executives, investors, and family dependants',
+        'Permanent Residence eligibility assessment and application',
+        'Inter-company transfer and secondment arrangements',
+      ],
+    },
+    {
+      persona: 'Foreign Law Firms & Advisors',
+      needs:
+        'International law firms and tax advisors seeking reliable Vietnamese counsel for cross-border M&A, FDI structuring, and immigration matters that touch Vietnam.',
+      iconId: 'iconContract',
+      examples: [
+        'Vietnam-law due diligence on M&A targets',
+        'Local counsel opinions and certificates',
+        'Coordination of multi-jurisdiction filings',
+        'Implementation of Vietnam-side post-closing steps',
+      ],
+    },
+  ],
+
+  serviceGroups: [
+    {
+      groupTitle: 'Market-entry and investment structuring',
+      services: [
+        {
+          title: 'Sectoral-access memorandum',
+          description:
+            'Analysis of conditional business lines and foreign-ownership caps for the intended activities under the Law on Investment 2020 — delivered before any capital commitment.',
+        },
+        {
+          title: 'Investment vehicle selection',
+          description:
+            'Comparison of LLC, JSC, representative office, and branch options against the client’s revenue, hiring, contracting, and time-horizon plans — with charter-capital sizing.',
+        },
+        {
+          title: 'IRC and ERC issuance',
+          description:
+            'Preparation and filing of the Investment Registration Certificate (Department of Planning and Investment) and Enterprise Registration Certificate to establish the Vietnamese vehicle.',
+        },
+        {
+          title: 'Foreign-exchange-control planning',
+          description:
+            'Direct Investment Capital Account (DICA) setup, capital contribution scheduling under the 90-day rule, and documentation for later dividend remittance and exit-proceeds remittance.',
+        },
+      ],
+    },
+    {
+      groupTitle: 'M&A and joint ventures',
+      services: [
+        {
+          title: 'M&A due diligence (Vietnam-side)',
+          description:
+            'Legal due diligence covering corporate, contractual, employment, real estate, IP, regulatory, tax and litigation — flagged and quantified for SPA negotiation.',
+        },
+        {
+          title: 'Share and asset purchase agreements',
+          description:
+            'Drafting and negotiation of SPAs, APAs, and shareholders’ agreements adapted to Vietnamese-law enforceability while preserving common-law commercial expectations.',
+        },
+        {
+          title: 'M&A approval and competition filings',
+          description:
+            'Filings with the Department of Planning and Investment for change of investor; pre-merger notifications to the Vietnam Competition Authority for size-threshold deals.',
+        },
+        {
+          title: 'Joint-venture structuring',
+          description:
+            'Deadlock, exit, related-party, and governance terms designed to anticipate divergence between foreign and Vietnamese partners — drafted to survive contested moments.',
+        },
+      ],
+    },
+    {
+      groupTitle: 'Immigration: visas, work permits, TRCs',
+      services: [
+        {
+          title: 'Business visas and visa-on-arrival assistance',
+          description:
+            'Single-entry and multiple-entry business visas, including in-country renewal and conversion to longer-term categories. Coordination with sponsoring entities.',
+        },
+        {
+          title: 'Work permits under Decree 152/2020/ND-CP',
+          description:
+            'Position approval, document chain (legalised diplomas, criminal-record checks, health certificates, employment letters), and submission to the labour authority.',
+        },
+        {
+          title: 'Temporary Residence Cards (TRCs)',
+          description:
+            'TRC applications for executives, investors, and family dependants — including category selection (DT, LD, TT) and duration alignment with underlying employment or investment.',
+        },
+        {
+          title: 'Permanent Residence and dependant arrangements',
+          description:
+            'Eligibility assessment for Permanent Residence; dependant TRCs for spouses and children; school-enrolment and bank-account practical support for relocating families.',
+        },
+      ],
+    },
+  ],
+
+  process: [
+    {
+      step: 1,
+      title: 'Strategic assessment',
+      description:
+        'Sectoral-access review, vehicle recommendation, capital sizing, and immigration roadmap — delivered as a written memorandum within two to three weeks of engagement.',
+      duration: '2-3 weeks',
+    },
+    {
+      step: 2,
+      title: 'Documentation and filings',
+      description:
+        'Preparation of foreign documents (notarisation, apostille, certified translation), IRC/ERC applications, employment contracts, and initial work-permit applications.',
+      duration: '6-10 weeks',
+    },
+    {
+      step: 3,
+      title: 'Approvals and capital contribution',
+      description:
+        'IRC and ERC issuance, DICA opening, charter-capital contribution within 90 days, work-permit approvals, and TRC issuance for foreign staff.',
+      duration: '8-12 weeks',
+    },
+    {
+      step: 4,
+      title: 'Operational handover',
+      description:
+        'Tax registration, social-insurance setup, employment policies, ongoing compliance calendar — and an annual legal-audit cadence for larger investments.',
+      duration: '2-4 weeks',
+    },
+  ],
+
+  featuredCase: {
+    slug: 'european-company-contract-dispute',
+    title: 'European Manufacturer — Vietnam Market Entry',
+    country: 'Germany',
+    flag: '🇩🇪',
+    area: 'FDI, Investment & Immigration',
+    outcome:
+      'IRC, ERC, charter-capital contribution, and work permits for the foreign management team — fully operational within five months of mandate.',
+    matterValue: 'USD 8M+ FDI',
+    imageId: 'caseDocumentSigning',
+  },
+
+  relatedInsightSlugs: [
+    'top-legal-risks-foreign-investors-vietnam',
+    'due-diligence-checklist-vietnam',
+  ],
+
+  faq: [
+    {
+      question: 'What investment vehicle is best for foreign entry to Vietnam?',
+      answer:
+        'It depends on five questions: will you generate revenue in Vietnam, do you need to import or export goods directly, will you employ Vietnamese staff under your direct entity, will you sign customer contracts directly, and what is your time horizon? Honest answers usually point clearly to one of: 100% foreign-owned LLC, joint-stock company, joint venture with a Vietnamese partner, representative office, or branch. I provide a written recommendation as the first deliverable of any market-entry mandate.',
+    },
+    {
+      question: 'How long does it take to set up a foreign-invested company?',
+      answer:
+        'For an unconditional sector with straightforward documentation: typically 8 to 12 weeks from engagement to operational ERC, plus 90 days for charter-capital contribution. Conditional sectors with sub-sector approvals can add another 6 to 12 weeks. Work-permit applications run in parallel and typically take 4 to 6 weeks once supporting documents are legalised.',
+    },
+    {
+      question: 'Can my family come with me on a Vietnamese work assignment?',
+      answer:
+        'Yes. Once you hold a work permit or qualifying TRC, your spouse and children under 18 can apply for dependant TRCs in the TT (visiting/dependant) category, valid for the same period as your principal TRC. Practical support — school enrolment, bank account opening, residential lease registration — is part of every executive immigration engagement.',
+    },
+    {
+      question: 'What is the difference between an IRC and an ERC?',
+      answer:
+        'The Investment Registration Certificate (IRC) is the foreign-investment approval — it sets out the investor, the project, the sectoral activities, the charter capital, and the investment timeline. The Enterprise Registration Certificate (ERC) is the corporate-law document constituting the Vietnamese legal entity — equivalent to articles of incorporation plus business registration. For most foreign investments you need both; the IRC is issued first and is a prerequisite to the ERC.',
+    },
+  ],
+
+  cta: {
+    headline: 'Planning a Vietnam Investment or Relocation?',
+    subline:
+      'Whether you are entering the market, restructuring an existing investment, completing a Vietnamese M&A transaction, or relocating staff — early advice saves months later. Get a confidential strategic assessment.',
+  },
+}
+
+// ============================================================================
 // EXPORT
 // ============================================================================
 
@@ -1892,6 +2165,7 @@ export const practiceAreasData: Record<string, PracticeAreaData> = {
   'labor-and-employment': laborAndEmployment,
   'criminal-defense': criminalDefense,
   arbitration: internationalArbitration,
+  'fdi-investment-immigration': fdiInvestmentImmigration,
 }
 
 export const practiceAreaSlugs = Object.keys(practiceAreasData)

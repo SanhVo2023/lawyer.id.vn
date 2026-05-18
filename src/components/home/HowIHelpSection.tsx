@@ -11,25 +11,25 @@ const helpItems = [
     icon: IMAGES.iconGlobe,
     title: 'Bridge the Legal Gap',
     description:
-      'Vietnam\'s civil law system can feel unfamiliar. I translate complex Vietnamese legal concepts into clear, actionable advice for clients from any legal tradition.',
+      'Vietnam’s legal system may be unfamiliar to foreign clients. I explain Vietnamese legal concepts in clear and practical terms for clients from different legal traditions.',
   },
   {
     icon: IMAGES.iconHandshake,
     title: 'No Language Barrier',
     description:
-      'All communication in fluent English. Documents, court proceedings, and negotiations — nothing gets lost in translation.',
+      'Client communication is supported by an English speaking legal team. Key documents, court related matters and negotiations are handled with care to preserve clarity and legal accuracy.',
   },
   {
     icon: IMAGES.iconScales,
     title: 'Protect Your Interests',
     description:
-      'Deep experience with foreign clients in Vietnamese courts and arbitration tribunals. I know how to protect your rights in cross-border matters.',
+      'With experience representing foreign clients before Vietnamese courts and in arbitration related matters, I help clients understand risks, protect their legal interests and make informed decisions.',
   },
   {
     icon: IMAGES.iconContract,
     title: 'Across Time Zones',
     description:
-      'International matters don\'t wait for office hours. WhatsApp, email, and video calls to accommodate your time zone — wherever you are.',
+      'For cross border matters, communication can be arranged by email, video call and messaging applications to accommodate different time zones — wherever you are.',
   },
 ]
 
@@ -85,7 +85,7 @@ export default function HowIHelpSection() {
                   alt={item.icon.alt}
                   width={56}
                   height={56}
-                  className="w-14 h-14"
+                  className="w-14 h-14 mix-blend-multiply"
                 />
               </motion.div>
 

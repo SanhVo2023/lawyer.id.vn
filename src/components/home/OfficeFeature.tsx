@@ -80,10 +80,10 @@ export default function OfficeFeature() {
             <div className="mt-6 h-[2px] w-20 bg-accent" />
 
             <p className="mt-8 text-lg text-text-secondary leading-relaxed">
-              Two offices in Ho Chi Minh City — Vietnam&apos;s business and legal hub.
-              Our offices are designed for international clients, with private
-              consultation rooms, video-conferencing facilities, and English-speaking
-              support staff.
+              Located in central Ho Chi Minh City near Ben Thanh Market, our office
+              provides a professional setting for international clients, with private
+              consultation rooms, video-conferencing facilities, and support from an
+              English speaking legal team.
             </p>
 
             {/* Address features */}
@@ -127,7 +127,7 @@ export default function OfficeFeature() {
                 </p>
               </div>
               <p className="sm:col-span-2 text-xs text-text-secondary font-[family-name:var(--font-inter)]">
-                Mon–Fri · 8:00 AM – 5:00 PM (GMT+7)
+                Mon–Fri · 8:30 AM – 6:00 PM (GMT+7)
               </p>
             </div>
           </motion.div>

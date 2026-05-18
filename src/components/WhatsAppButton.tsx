@@ -1,3 +1,5 @@
+import { IDENTITY } from '@/data/identity'
+
 interface WhatsAppButtonProps {
   message?: string
   className?: string
@@ -8,7 +10,7 @@ export default function WhatsAppButton({
   className = '',
 }: WhatsAppButtonProps) {
   const encodedMessage = encodeURIComponent(message)
-  const whatsappUrl = `https://wa.me/84903419479?text=${encodedMessage}`
+  const whatsappUrl = `https://wa.me/${IDENTITY.callCenterWhatsApp}?text=${encodedMessage}`
 
   return (
     <a

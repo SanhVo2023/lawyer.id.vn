@@ -55,7 +55,7 @@ export default function MeetCounsel() {
               />
               <div className="font-[family-name:var(--font-inter)]">
                 <div className="text-[10px] uppercase tracking-[0.2em] text-accent">Verified Identity</div>
-                <div className="text-xs text-white/90 mt-0.5">Vietnam Bar · VIAC Arbitrator</div>
+                <div className="text-xs text-white/90 mt-0.5">Vietnam Bar · AEA Member</div>
               </div>
             </motion.div>
           </motion.div>
@@ -86,16 +86,20 @@ export default function MeetCounsel() {
 
             <div className="mt-6 space-y-4 text-base text-text-secondary leading-relaxed">
               <p>
-                Henry Vo is a Vietnamese-licensed attorney with over {IDENTITY.yearsExperience} years
-                of experience representing foreign clients in Vietnam. As Managing Partner at{' '}
-                {IDENTITY.firm}, he leads cross-border matters spanning civil litigation, corporate
-                law, family law, criminal defense, and international arbitration.
+                Henry Vo ({IDENTITY.vietnameseName}) is a Vietnamese licensed lawyer with over{' '}
+                {IDENTITY.yearsExperience} years of legal practice experience in Vietnam. He has led{' '}
+                {IDENTITY.firmShort} as Managing Partner since {IDENTITY.managingPartnerSince},
+                advising and representing foreign clients, international businesses and expatriates
+                in matters involving civil litigation, corporate law, family law, criminal defence
+                and arbitration.
               </p>
               <p>
-                His practice has served clients from {IDENTITY.countriesServed}+ countries — Fortune
-                500 companies, family-owned businesses, expat individuals, and foreign law firms
-                seeking trusted local counsel. Communication is direct, in fluent English, and
-                responsive across time zones.
+                His practice, together with the English speaking legal team at {IDENTITY.firmShort},
+                has served clients from more than {IDENTITY.countriesServed} countries, including
+                Fortune 500 companies, family owned businesses, expatriate individuals and foreign
+                law firms seeking reliable local counsel in Vietnam. Client communication is handled
+                directly and professionally, with the support of team members who are fluent in
+                English and responsive to cross border working requirements.
               </p>
             </div>
 

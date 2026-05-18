@@ -6,22 +6,22 @@ import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Henry Vo | International Lawyer in Vietnam',
-    template: '%s | Henry Vo - Lawyer in Vietnam',
+    default: 'Henry Vo | Vietnamese Lawyer for International Clients',
+    template: '%s | Henry Vo - Vietnamese Lawyer for International Clients',
   },
   description:
-    'Henry Vo (Vo Thien Hien) — Managing Partner at Apolo Lawyers. International lawyer in Vietnam serving foreign clients, expats, and businesses with civil litigation, corporate law, family law, and dispute resolution.',
+    'Henry Vo (Vo Thien Hien) — Managing Partner of Apolo Lawyers since 2018. Vietnamese lawyer with over 20 years of practice serving foreign clients, expatriates, and international businesses in civil litigation, corporate law, family law, criminal defence, and arbitration.',
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://lawyer.id.vn'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Henry Vo - International Lawyer in Vietnam',
+    siteName: 'Henry Vo - Vietnamese Lawyer for International Clients',
     images: [
       {
         url: 'https://pub-ebe397ad6fc946888f5c9aacc3cc48bb.r2.dev/lawyer.id.vn/og/og-default-760157f0.webp',
         width: 1200,
         height: 630,
-        alt: 'Henry Vo — International Lawyer in Vietnam',
+        alt: 'Henry Vo — Vietnamese Lawyer for International Clients',
       },
     ],
   },

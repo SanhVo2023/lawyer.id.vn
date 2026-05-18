@@ -113,7 +113,7 @@ export default function HeroSection() {
             className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.25em] text-accent font-medium font-[family-name:var(--font-inter)]"
           >
             <span className="w-8 h-px bg-accent" />
-            International Lawyer in Vietnam
+            Vietnamese Lawyer for International Clients
           </motion.span>
 
           <motion.h1
@@ -157,7 +157,7 @@ export default function HeroSection() {
             className="mt-10 flex flex-wrap gap-8"
           >
             {[
-              { value: '15+', label: 'Years Experience' },
+              { value: '20+', label: 'Years Experience' },
               { value: '500+', label: 'Cases Handled' },
               { value: '20+', label: 'Countries Served' },
             ].map((stat, i) => (
@@ -204,7 +204,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 2.5 }}
           className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 space-y-3"
         >
-          {['VIAC', 'SIAC', 'ICC', 'NYC'].map((badge, i) => (
+          {['VIAC', 'SIAC', 'ICC', 'Vietnam'].map((badge, i) => (
             <motion.div
               key={badge}
               initial={{ opacity: 0, x: 20 }}

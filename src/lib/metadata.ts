@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { IMAGES } from '@/lib/images'
+import { IDENTITY } from '@/data/identity'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lawyer.id.vn'
 
@@ -84,8 +85,8 @@ export function generatePersonJsonLd() {
         addressCountry: 'VN',
       },
     ],
-    telephone: '+84903419479',
-    email: 'contact@apolo.com.vn',
+    telephone: IDENTITY.callCenterTel,
+    email: IDENTITY.email,
     url: siteUrl,
     sameAs: [
       'https://www.apololawyers.com',
@@ -100,10 +101,10 @@ export function generateLegalServiceJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    name: 'Henry Vo - International Lawyer in Vietnam',
+    name: 'Henry Vo - Vietnamese Lawyer for International Clients',
     url: siteUrl,
-    telephone: '+84903419479',
-    email: 'contact@apolo.com.vn',
+    telephone: IDENTITY.callCenterTel,
+    email: IDENTITY.email,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '108 Tran Dinh Xu Street, Cau Ong Lanh Ward',
@@ -113,8 +114,8 @@ export function generateLegalServiceJsonLd() {
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '08:00',
-      closes: '17:00',
+      opens: '08:30',
+      closes: '18:00',
     },
     areaServed: {
       '@type': 'Country',

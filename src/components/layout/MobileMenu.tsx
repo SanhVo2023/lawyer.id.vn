@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { IDENTITY } from '@/data/identity'
 
 interface NavItem {
   label: string
@@ -90,13 +91,13 @@ export default function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProp
               className="absolute bottom-12 text-center"
             >
               <a
-                href="https://wa.me/84903419479"
+                href={`https://wa.me/${IDENTITY.callCenterWhatsApp}`}
                 className="text-sm text-accent font-[family-name:var(--font-inter)]"
               >
-                WhatsApp: (+84) 903.419.479
+                WhatsApp: {IDENTITY.callCenterDisplay}
               </a>
               <p className="mt-1 text-xs text-white/40 font-[family-name:var(--font-inter)]">
-                Mon-Fri, 8:00 AM - 5:00 PM (GMT+7)
+                Mon-Fri, 8:30 AM - 6:00 PM (GMT+7)
               </p>
             </motion.div>
           </nav>

@@ -7,27 +7,69 @@ import { generatePageMetadata, generateBreadcrumbJsonLd } from '@/lib/metadata'
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Credentials & Memberships — Henry Vo',
-  description: 'Bar admissions, certifications, professional memberships, and education credentials of Henry Vo (Vo Thien Hien), Managing Partner at Apolo Lawyers.',
+  description:
+    'Professional background, legal practice credentials, memberships and experience supporting the representation of international clients in Vietnam.',
   path: '/credentials',
 })
 
-const credentials = {
-  'Bar Admissions': [
-    { title: 'Vietnam Bar Federation', institution: 'Licensed Attorney', year: 2010, description: 'Full license to practice law in all Vietnamese courts and arbitration tribunals.' },
-    { title: 'Ho Chi Minh City Bar Association', institution: 'Active Member', year: 2010, description: 'Member in good standing of the HCMC Bar Association.' },
+type CredentialItem = { title: string; institution: string; description?: string }
+
+const credentials: Record<string, CredentialItem[]> = {
+  'Legal Practice Credentials': [
+    {
+      title: 'Ministry of Justice of Vietnam',
+      institution: 'Lawyer Practising Certificate',
+      description:
+        'Official Lawyer Practising Certificate issued by the Ministry of Justice of Vietnam.',
+    },
+    {
+      title: 'Vietnam Bar Federation',
+      institution: 'Lawyer Card',
+      description:
+        'Lawyer Card issued by the Vietnam Bar Federation — full authorisation to practice law in Vietnam.',
+    },
   ],
-  'Education': [
-    { title: 'Juris Doctor (J.D.) Equivalent', institution: 'Ho Chi Minh City University of Law', year: 2008, description: 'Graduated with honors in civil and commercial law.' },
-    { title: 'Legal Practice Certificate', institution: 'Judicial Academy of Vietnam', year: 2009, description: 'Completed professional legal practice training.' },
+  'Bar & Professional Memberships': [
+    {
+      title: 'Ho Chi Minh City Bar Association',
+      institution: 'Member',
+      description:
+        'Member of the Ho Chi Minh City Bar Association, the bar association for lawyers practising in HCMC.',
+    },
+    {
+      title: 'Vietnam Lawyers Association',
+      institution: 'Member',
+      description:
+        'Member of the Vietnam Lawyers Association — contributing to legal practice development.',
+    },
+    {
+      title: 'Association of European Attorneys',
+      institution: 'Member of AEA',
+      description:
+        'Member of the Association of European Attorneys — cross-border working relationships with foreign law firms.',
+    },
   ],
-  'Memberships': [
-    { title: 'Vietnam International Arbitration Centre (VIAC)', institution: 'Arbitrator Panel', year: 2018, description: 'Recognized arbitrator for international commercial disputes.' },
-    { title: 'Vietnam Lawyers Association', institution: 'Member', year: 2010, description: 'Active member contributing to legal practice development.' },
-    { title: 'International Bar Association', institution: 'Associate Member', year: 2020, description: 'Connected to the global legal community for cross-border matters.' },
+  'Arbitration Experience': [
+    {
+      title: 'VIAC Arbitration',
+      institution: 'Arbitration counsel experience',
+      description:
+        'Arbitration counsel experience in matters before the Vietnam International Arbitration Centre, working with clients across multiple jurisdictions.',
+    },
   ],
-  'Certifications': [
-    { title: 'International Commercial Arbitration', institution: 'VIAC Training Program', year: 2017, description: 'Specialized training in international arbitration procedures and enforcement.' },
-    { title: 'Cross-Border Dispute Resolution', institution: 'Singapore International Arbitration Centre', year: 2019, description: 'Advanced training in multi-jurisdictional dispute resolution.' },
+  'Education & Training': [
+    {
+      title: 'Ho Chi Minh City University of Law',
+      institution: 'Legal education',
+      description:
+        'Legal education in civil and commercial law at Ho Chi Minh City University of Law.',
+    },
+    {
+      title: 'Judicial Academy of Vietnam',
+      institution: 'Professional legal training',
+      description:
+        'Post-graduate professional legal practice training at the Judicial Academy of Vietnam.',
+    },
   ],
 }
 
@@ -47,7 +89,7 @@ export default function CredentialsPage() {
         imageId="heroAboutPortrait"
         eyebrow="Professional Background"
         title="Credentials & Memberships"
-        subtitle="Professional qualifications, bar admissions, and memberships that underpin my legal practice serving international clients in Vietnam."
+        subtitle="Professional background, legal practice credentials, memberships and experience supporting the representation of international clients in Vietnam."
         breadcrumb={[{ label: 'Credentials' }]}
       />
 
@@ -62,18 +104,13 @@ export default function CredentialsPage() {
                     key={item.title}
                     className="rounded-sm border border-border p-6 transition-all duration-300 hover:border-accent/30"
                   >
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <h3 className="text-base font-semibold text-primary">{item.title}</h3>
-                        <p className="text-sm text-accent mt-1">{item.institution}</p>
-                      </div>
-                      <span className="text-sm font-bold text-accent font-[family-name:var(--font-inter)]">
-                        {item.year}
-                      </span>
-                    </div>
-                    <p className="mt-3 text-sm text-text-secondary leading-relaxed">
-                      {item.description}
-                    </p>
+                    <h3 className="text-base font-semibold text-primary">{item.title}</h3>
+                    <p className="text-sm text-accent mt-1">{item.institution}</p>
+                    {item.description && (
+                      <p className="mt-3 text-sm text-text-secondary leading-relaxed">
+                        {item.description}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>

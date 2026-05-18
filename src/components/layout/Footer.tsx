@@ -6,29 +6,21 @@ const affiliations = [
   {
     src: '/asset/logo-transparent.png',
     alt: 'Apolo Lawyers — Solicitors & Litigators',
-    name: 'Apolo Lawyers',
-    detail: 'Managing Partner',
     href: 'https://www.apololawyers.com',
   },
   {
     src: '/asset/logo-lsvn.png',
-    alt: 'Vietnam Bar Federation — Liên Đoàn Luật Sư Việt Nam',
-    name: 'Vietnam Bar Federation',
-    detail: 'Licensed Attorney',
+    alt: 'Liên Đoàn Luật Sư Việt Nam — Vietnam Bar Federation',
     href: undefined,
   },
   {
-    src: '/asset/logo-ccbe.png',
-    alt: 'Council of Bars and Law Societies of Europe (CCBE)',
-    name: 'CCBE',
-    detail: 'European Lawyers Network',
+    src: '/asset/logo-aea-en.png',
+    alt: 'Association of European Attorneys (AEA)',
     href: undefined,
   },
   {
-    src: '/asset/logo-aea.svg',
-    alt: 'Asian Economic Association',
-    name: 'Asian Economic Assoc.',
-    detail: 'International Affiliation',
+    src: '/asset/logo-global-law-experts.webp',
+    alt: 'Global Law Experts',
     href: undefined,
   },
 ]
@@ -41,6 +33,7 @@ const practiceAreaLinks = [
   { label: 'Labor & Employment', href: '/practice-areas/labor-and-employment' },
   { label: 'Criminal Defense', href: '/practice-areas/criminal-defense' },
   { label: 'Arbitration', href: '/practice-areas/arbitration' },
+  { label: 'FDI, Investment & Immigration', href: '/practice-areas/fdi-investment-immigration' },
 ]
 
 const resourceLinks = [
@@ -183,7 +176,7 @@ export default function Footer() {
                 </p>
               </div>
               <p className="text-xs text-white/40 font-[family-name:var(--font-inter)]">
-                Office Hours: Mon–Fri, 8:00 AM – 5:00 PM (GMT+7)
+                Office Hours: Mon–Fri, 8:30 AM – 6:00 PM (GMT+7)
               </p>
             </div>
           </div>
@@ -200,39 +193,32 @@ export default function Footer() {
               <span className="w-8 h-px bg-accent/40" />
             </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 items-center">
             {affiliations.map((a) => {
               const inner = (
-                <div className="group flex flex-col items-center text-center">
-                  <div className="relative h-16 w-full flex items-center justify-center mb-3">
-                    <Image
-                      src={a.src}
-                      alt={a.alt}
-                      width={120}
-                      height={64}
-                      className="max-h-16 w-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                    />
-                  </div>
-                  <div className="text-xs font-medium text-white/80 font-[family-name:var(--font-inter)]">
-                    {a.name}
-                  </div>
-                  <div className="mt-0.5 text-[10px] uppercase tracking-[0.15em] text-white/40 font-[family-name:var(--font-inter)]">
-                    {a.detail}
-                  </div>
+                <div className="group relative h-20 w-full flex items-center justify-center">
+                  <Image
+                    src={a.src}
+                    alt={a.alt}
+                    width={160}
+                    height={80}
+                    className="max-h-20 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  />
                 </div>
               )
               return a.href ? (
                 <a
-                  key={a.name}
+                  key={a.src}
                   href={a.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
+                  aria-label={a.alt}
                 >
                   {inner}
                 </a>
               ) : (
-                <div key={a.name}>{inner}</div>
+                <div key={a.src} aria-label={a.alt}>{inner}</div>
               )
             })}
           </div>

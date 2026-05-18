@@ -18,9 +18,9 @@ import {
 } from '@/lib/metadata'
 
 export const metadata: Metadata = generatePageMetadata({
-  title: 'Henry Vo — International Lawyer in Vietnam | Apolo Lawyers',
+  title: 'Henry Vo — Vietnamese Lawyer for International Clients | Apolo Lawyers',
   description:
-    'Henry Vo (Vo Thien Hien), Managing Partner at Apolo Lawyers. International lawyer in Vietnam representing foreign clients in civil litigation, corporate law, family law, criminal defense, and international arbitration. 15+ years, 500+ matters, 20+ countries.',
+    'Henry Vo (Vo Thien Hien), Managing Partner of Apolo Lawyers since 2018. Vietnamese lawyer with over 20 years of practice representing foreign clients in civil litigation, corporate law, family law, criminal defence, and arbitration. Clients from 20+ countries.',
   path: '/',
 })
 
@@ -29,8 +29,8 @@ export default function HomePage() {
     {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'Henry Vo - International Lawyer in Vietnam',
-      alternateName: 'Vo Thien Hien - Lawyer in Vietnam',
+      name: 'Henry Vo - Vietnamese Lawyer for International Clients',
+      alternateName: 'Vo Thien Hien - Lawyer for International Clients',
       url: 'https://lawyer.id.vn',
       inLanguage: 'en',
       publisher: {
@@ -40,8 +40,8 @@ export default function HomePage() {
         jobTitle: 'Managing Partner',
         worksFor: {
           '@type': 'LegalService',
-          name: 'Apolo Lawyers',
-          url: 'https://apololawyers.com',
+          name: 'APOLO LAWYERS - Solicitors & Litigators',
+          url: 'https://www.apololawyers.com',
         },
       },
     },

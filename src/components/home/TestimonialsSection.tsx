@@ -29,12 +29,12 @@ const testimonials = [
   },
   {
     quote:
-      'We needed local counsel we could fully trust. Henry delivered exceptional VIAC arbitration representation, and his coordination with our Korean legal team was seamless.',
+      'Henry delivered exceptional VIAC arbitration representation. Coordination with our Korean legal team was seamless from start to finish.',
     name: 'Mr. Park',
     role: 'General Counsel',
     country: 'South Korea',
     flag: '🇰🇷',
-    matter: 'International Arbitration',
+    matter: 'Arbitration',
   },
 ]
 
